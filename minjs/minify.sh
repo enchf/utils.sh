@@ -1,3 +1,4 @@
+#!/bin/bash
 arr=($(echo $1 | tr "." "\n"))
 name=${arr[0]}
 ext=${arr[1]}
