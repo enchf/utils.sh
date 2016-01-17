@@ -1,7 +1,7 @@
 #!/bin/bash
-arr=($(echo $1 | tr "." "\n"))
-name=${arr[0]}
-ext=${arr[1]}
+f=$1
+name=${f%.*}
+ext=${f##*.}
 
 case "$ext" in
  "js") website="javascript-minifier" ;;
